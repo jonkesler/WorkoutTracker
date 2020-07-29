@@ -1,13 +1,89 @@
-# Updated Portfolio
-Responsive Professional Portfolio
-This updated site allows the user to view my various projects, group projects and contact information.  It also allows the user to go directly to my LinkedIn and GitHub profiles.
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+
+![GitHub contributors](https://img.shields.io/github/contributors/jonkesler/WorkoutTracker)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/jonkesler/WorkoutTracker?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/jonkesler/WorkoutTracker)
+
+# Workout Tracker
 
 
-## GitHub Info
-===================
 
-1. Repository URL:  https://github.com/jonkesler/updatedPortfolio.git
+## Description 
+    
+WorkoutTracker allows the user to create new burgers and when ready they can devoure them.  This application uses Node.js, Express, MySQL, and Handlebards. 
 
-2. Repository SSH:  git@github.com:jonkesler/updatedPortfolio.git
+This application uses a front end implemented with HTML/CSS and the backend implemented with Node.js and Express. HTML templating is done with the help of Handlebars.
 
-3. Web URL:  https://jonkesler.github.io/updatedPortfolio/
+The user may enter any burger name to add it to the menu. This also adds the new burger entry into the MySQL database. The initial burger entry is added as with the devoured field set to false on the menu and placed on the left side of the screen. The user may then devoure any burger by clicking the devoure button next to it, which moves it into the right side of the screen and updates its status accordingly in the database.
+
+*** after looking through the public folder walking back through the exercises in day 2 made it obvious what was needed. 
+    
+    
+## Table of Contents
+    
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Contact](#contact)
+    
+    
+## Installation
+    
+
+To run the application locally, first clone this repository with the following command.
+
+        git clone git@github.com:jonkesler/burger.git for the SSH Repository 
+        or 
+        git clone https://github.com/jonkesler/burger.git for the HTTPS Repository
+        
+Next, install the application dependencies.
+
+        With Visual Studio, navigate to the Burgers directory created when you cloned the Repository.
+        Right click on the server.js file and open a terminal.
+        run npm install
+
+Next, install the database.
+
+        Open the db folder then the schema.sql file.  Copy the contents and run in MySQL.  
+        Next open the seeds.sql file and copy and run it's contents in MySQL.
+        
+Finally, run the node server locally.
+
+        node server
+        
+Now, open the local application on port 3000 at the URL: `http://localhost:3000`.
+
+**Enjoy and have a burger!**
+
+
+      
+## Demo
+
+The demo of the burger eating application can be found [here](https://jkeslerburger.herokuapp.com/).
+
+
+
+## License
+
+This Project uses a MIT License License.
+
+
+## Contributing
+    
+Jon Kesler
+    
+    
+## Contact
+
+If you would like to contribute to this project please contact: 
+  Jon Kesler 
+  Email:jkesler@hotmail.com   
+
+
+Web URL: https://jonkesler.github.io/WorkoutTracker/
+
+Repository URL: https://github.com/jonkesler/WorkoutTracker.git
+
+Repository SSH: git@github.com:jonkesler/WorkoutTracker.git
