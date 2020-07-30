@@ -10,13 +10,13 @@
 
 ## Description 
     
-WorkoutTracker allows the user to create new burgers and when ready they can devoure them.  This application uses Node.js, Express, MySQL, and Handlebards. 
+WorkoutTracker allows the user to continue a previous workout or create a new one.  After each exercise the tracker will show a summary for the workout. 
 
-This application uses a front end implemented with HTML/CSS and the backend implemented with Node.js and Express. HTML templating is done with the help of Handlebars.
+This application uses a front end implemented with HTML/CSS and the backend implemented with Node.js, Express, a Mongo DB, and a mongoose package.
 
-The user may enter any burger name to add it to the menu. This also adds the new burger entry into the MySQL database. The initial burger entry is added as with the devoured field set to false on the menu and placed on the left side of the screen. The user may then devoure any burger by clicking the devoure button next to it, which moves it into the right side of the screen and updates its status accordingly in the database.
+The user may enter any exercise to the tracker along with other details depending on the type of exercise. This adds the exercise to a Mongo database. 
 
-*** after looking through the public folder walking back through the exercises in day 2 made it obvious what was needed. 
+With the given code looking through the public folder walking back through the exercises in day 2 made it obvious what was needed. A server.js, models, and routes.  
     
     
 ## Table of Contents
@@ -34,34 +34,29 @@ The user may enter any burger name to add it to the menu. This also adds the new
 
 To run the application locally, first clone this repository with the following command.
 
-        git clone git@github.com:jonkesler/burger.git for the SSH Repository 
+        git clone git@github.com:jonkesler/WorkoutTracker.git for the SSH Repository 
         or 
-        git clone https://github.com/jonkesler/burger.git for the HTTPS Repository
+        git clone https://github.com/jonkesler/WorkoutTracker.git for the HTTPS Repository
         
 Next, install the application dependencies.
 
-        With Visual Studio, navigate to the Burgers directory created when you cloned the Repository.
+        With Visual Studio, navigate to the WorkOutTracker directory created when you cloned the Repository.
         Right click on the server.js file and open a terminal.
         run npm install
-
-Next, install the database.
-
-        Open the db folder then the schema.sql file.  Copy the contents and run in MySQL.  
-        Next open the seeds.sql file and copy and run it's contents in MySQL.
-        
+     
 Finally, run the node server locally.
 
         node server
         
 Now, open the local application on port 3000 at the URL: `http://localhost:3000`.
 
-**Enjoy and have a burger!**
+**Enjoy your Workout!**
 
 
       
 ## Demo
 
-The demo of the burger eating application can be found [here](https://jkeslerburger.herokuapp.com/).
+A demo of the Workout Tracker application can be found [here](https://jkeslerworkouttracker.herokuapp.com/).
 
 
 
@@ -82,7 +77,9 @@ If you would like to contribute to this project please contact:
   Email:jkesler@hotmail.com   
 
 
-Web URL: https://jonkesler.github.io/WorkoutTracker/
+Web URL: https://jkeslerworkouttracker.herokuapp.com/
+
+GitHub URL: https://jonkesler.github.io/WorkoutTracker/
 
 Repository URL: https://github.com/jonkesler/WorkoutTracker.git
 
